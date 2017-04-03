@@ -18,10 +18,6 @@ class OpenStreetMap :
         self.nodes = OSMUtils.domToNodes(root)
         self.ways = OSMUtils.domToWays(root)
         self.relations = OSMUtils.domToRelations(root)
-        for relation in self.relations :
-            print relation
-            for member in relation.members :
-                print '   ', member
 
 
 class OSMUtils :
